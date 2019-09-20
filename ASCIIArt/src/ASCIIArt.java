@@ -1,27 +1,71 @@
-/**
- * Unit 1 Project
- * 
- * In this project you have the opportunity to create a piece of artwork using ASCII 
- * (American Standard Code for Information Interchange). Using the already created file 
- * named `ASCIIArt.java` write a program that outputs your artwork to the console. 
- * The goal of this project is to use ONLY what we have learned in Unit 1 to create 
- * anything you would like so be creative (and school appropriate). Artwork must also have a caption describing what it's depicting.  
- * 
- * For those of you who have dabbled in coding before, try to contain your code to 
- * just what we have discussed in this unit.  
- * 
- * @author Mr. Rasmussen 
- *
- */
-
-// YOU CODE HERE :) 
 
 public class ASCIIArt {
-	public static void main (String [] args) {
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
+	
+	public static void drawTriangle() {
+		System.out.print("/\\/\\/\\");
+		
+		
 	}
+	
+	public static void oneRow() {
+		System.out.println("-----------------------------------------");
+		System.out.println("|   [ ]\t   [ ]\t [ ]\t[ ]\t[ ]\t|");
+		System.out.println("|   [ ]\t   [ ]\t [ ]\t[ ]\t[ ]\t|");
+		System.out.println("-----------------------------------------");
+		
+	}
+	
+	public static void row_Building() {
+		System.out.println("-----------------------------------------             |````````````|");
+		System.out.println("|   [ ]\t   [ ]\t [ ]\t[ ]\t[ ]\t|             |            |");
+		System.out.println("|   [ ]\t   [ ]\t [ ]\t[ ]\t[ ]\t|             |            |");
+		System.out.println("-----------------------------------------             |            |");
+	}
+	
+	public static void drawGrass() {
+		drawTriangle();
+		drawTriangle();
+		drawTriangle();
+		drawTriangle();
+		drawTriangle();
+		drawTriangle();
+		drawTriangle();
+		drawTriangle();
+		drawTriangle();
+	}
+	
+	public static void drawRect() {
+		System.out.println();
+		System.out.println("--------------------------------------------------------------------------------------------------------------");
+		System.out.println();
+		System.out.println();
+		System.out.println("--------------------------------------------------------------------------------------------------------------");
+		
+	}
+	
+	public static void drawRoad() {
+		drawRect();
+		System.out.println("This is a pic of 2 buildings, with grass and a road");
+		drawRect();
+	}
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		oneRow();
+		oneRow();
+		oneRow();
+		oneRow();
+		oneRow();
+		row_Building();
+		row_Building();
+		row_Building();
+		drawGrass(); 	
+		drawGrass();
+		drawRoad();
+		
+	}
+	
+	
+
 }
